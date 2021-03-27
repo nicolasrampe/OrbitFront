@@ -1,0 +1,21 @@
+<div>
+  <h2>Student Add</h2>
+  <div>
+    <label>Student Username:
+      <input [(ngModel)]="studentData.Username" placeholder="Student Username"/>
+    </label><br>
+    <label>Student First Name:
+      <input [(ngModel)]="studentData.FirstName" placeholder="Student First Name"/>
+    </label><br>
+    <label>Student Last Name:
+      <input [(ngModel)]="studentData.LastName" placeholder="Student Last Name"/>
+    </label><br>
+    <label>Student Age:
+      <input [(ngModel)]="studentData.Age" placeholder="Student Age"/>
+    </label><br>
+    <label>Student Career:
+      <input [(ngModel)]="studentData.Career" placeholder="Student Career"/>
+    </label><br>
+  </div>
+  <button (click)="addStudent()">Save Student</button>
+</div>

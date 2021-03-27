@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "87380498-f8a2-479f-b0ed-e28284a840e7"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -65,7 +68,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "OrbitFront:build"
+            "browserTarget": "OrbitFront:build",
+              "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {

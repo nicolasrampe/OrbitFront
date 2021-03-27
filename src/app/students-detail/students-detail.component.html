@@ -1,0 +1,13 @@
+<div *ngIf="student" class="students">
+  <h2>{{student.username | uppercase}} Details</h2>
+  <div><span>Username: </span>{{student.username}}</div>
+  <div><span>First name: </span>{{student.firstname}}</div>
+  <div><span>Last name: </span>{{student.lastname}}</div>
+  <div><span>Age: </span>{{student.age}}</div>
+  <div><span>Career: </span>{{student.career}}</div>
+  <div>
+    <button routerLink="/students-edit/{{student.id}}">
+      Edit Student
+    </button>
+  </div>
+</div>
